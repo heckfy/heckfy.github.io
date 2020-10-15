@@ -1,0 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of reset */
+
+html,
+body {
+  height: 100%;
+  font-family: Lato;
+  background: #ffffff;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+h1 {
+  display: flex;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+h2 {
+  width: 70%;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  margin-top: 96px;
+  margin-bottom: 64px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: rgba(51, 51, 51, 0.05);
+}
+a {
+  color: #4696ec;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  display: block;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+ul {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+ul li:before {
+  content: " ○ ";
+  padding: 0 3px 0 3px;
+}
+ul li a {
+  display: inline-block;
+}
+ul:last-child li {
+  margin: 0 10px 0 10px;
+  content: none;
+}
+ul:last-child li a {
+  margin-top: 5px;
+}
+ul:last-child li::before {
+  content: none;
+}
+
+@media all and (max-width: 768px) {
+  .wrapper {
+    height: auto;
+    padding: 50px 30px 50px 30px;
+  }
+  hr {
+    margin-top: 36px;
+    margin-bottom: 20px;
+  }
+  ul:last-child li {
+    display: block;
+    margin-top: 20px;
+  }
+}
